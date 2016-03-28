@@ -15,7 +15,7 @@ All events can be published on our `$scope` or `$rootScope` objects. Why do we u
 
 Angular offers us two ways of publishing events - either up or down. Up will go all the way from the current scope to our root scope, and down will go down from our current scope into it's children scopes, and all it's children's scopes, and so on and so forth.
 
-Child scopes are a bit tricky to understand - but don't worry, they're really simple! Let's imagine where we start our app - `ng-app`. This is our `$rootScope`. Then, we use `ng-controller` or a directive inside `ng-app`. This will create another scope, inside of our root scope. Then, if we were to put use a directive inside of them, we'd get a child scope inside their scope. Whenever we use a directive (`ng-controller`, `ng-repeat`, custom directives etc) that create their own scope, they're made in their parents scopes.
+Child scopes are a bit tricky to understand - but don't worry, they're really simple! Let's imagine where we start our app - `ng-app`. This is our `$rootScope`. Then, we use `ng-controller` or a directive inside `ng-app`. This will create another scope, inside of our root scope. Then, if we were to use a directive inside of them, we'd get a child scope inside their scope. Whenever we use a directive (`ng-controller`, `ng-repeat`, custom directives etc) that create their own scope, they're made in their parents scopes.
 
 To publish events downwards, we use `$scope.$broadcast`. To publish event upwards, we use `$scope.$emit`.
 
@@ -98,3 +98,5 @@ var unbind = $rootScope.$on('eventName', function () {
 
 $scope.$on('$destroy', unbind);
 ```
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/angular-what-is-the-event-system-readme'>What Is The Event System </a> on Learn.co and start learning to code for free.</p>
