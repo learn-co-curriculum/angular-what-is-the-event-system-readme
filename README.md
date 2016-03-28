@@ -11,7 +11,7 @@ Another powerful offering from Angular is the integrated event system. This allo
 
 ## Publishing events
 
-All events can be published on our `$scope` or `$rootScope` objects. Why do we use events? Well, communication between controllers in two different aspects of the application can become quite hard - how can our controllers notify each other of updates? Or imagine if we receive data in a service and that data gets updated - how can notify the controllers that there is new data to consume. This is where events come in! 
+All events can be published on our `$scope` or `$rootScope` objects. Why do we use events? Well, communication between controllers in two different aspects of the application can become quite hard - how can our controllers notify each other of updates? Or imagine if we receive data in a service and that data gets updated - how can we notify the controllers that there is new data to consume. This is where events come in! 
 
 Angular offers us two ways of publishing events - either up or down. Up will go all the way from the current scope to our root scope, and down will go down from our current scope into it's children scopes, and all it's children's scopes, and so on and so forth.
 
