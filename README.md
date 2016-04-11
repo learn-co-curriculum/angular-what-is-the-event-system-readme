@@ -19,7 +19,7 @@ Child scopes are a bit tricky to understand - but don't worry, they're really si
 
 To publish events downwards, we use `$scope.$broadcast`. To publish event upwards, we use `$scope.$emit`.
 
-The first argument we pass through to these functions are the name of the event. This is what we would then specify when we want to listen for the event. We could have a message being sent and then received, so we'd generally namespace these into `message` and then the action - such as `message:sent` and `message:received`.
+The first argument we pass through to these functions is the name of the event. This is what we would then specify when we want to listen for the event. We could have a message being sent and then received, so we'd generally namespace these into `message` and then the action - such as `message:sent` and `message:received`.
 
 The second argument we pass through is data. This can then be picked up by the subscriber. For instance, we might want to publish an event when the user sends a message - we can send the message data through with the event too, and subscribe to it in a directive that then displays the message.
 
