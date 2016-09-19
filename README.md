@@ -75,7 +75,7 @@ $rootScope.$on('aDifferentEvent', function (event, data) {
 
 ## Unsubscribing from an event
 
-One awesome thing that Angular does when we subscribe to an event is provide us a really easy way to unsubscribe from it. Angular will automatically unsubscribe all the event subscribers on our `$scope` object (that's how we can use `$scope.$on` to listen for `$destroy`), but it can't unsuscribe from our subscribers on the `$rootScope`.
+One awesome thing that Angular does when we subscribe to an event is provide us a really easy way to unsubscribe from it. Angular will automatically unsubscribe all the event subscribers on our `$scope` object (that's how we can use `$scope.$on` to listen for `$destroy`), but it can't unsubscribe from our subscribers on the `$rootScope`.
 
 `$scope.$on` returns a closure function that we can actually call to unsubscribe it!
 
@@ -100,3 +100,5 @@ $scope.$on('$destroy', unbind);
 ```
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/angular-what-is-the-event-system-readme'>What Is The Event System </a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/angular-what-is-the-event-system-readme'>What Is The Event System </a> on Learn.co and start learning to code for free.</p>
