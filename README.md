@@ -99,6 +99,4 @@ var unbind = $rootScope.$on('eventName', function () {
 $scope.$on('$destroy', unbind);
 ```
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/angular-what-is-the-event-system-readme'>What Is The Event System </a> on Learn.co and start learning to code for free.</p>
-
 <p class='util--hide'>View <a href='https://learn.co/lessons/angular-what-is-the-event-system-readme'>What Is The Event System </a> on Learn.co and start learning to code for free.</p>
