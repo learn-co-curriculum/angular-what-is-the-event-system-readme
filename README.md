@@ -2,7 +2,7 @@
 
 ## Overview
 
-Another powerful offering from Angular is the integrated event system. This allows us to publish and subcribe to events. We've actually used this already - remember using `$scope.$on` to listen to the `$destroy` event?
+Another powerful offering from Angular is the integrated event system. This allows us to publish and subscribe to events. We've actually used this already - remember using `$scope.$on` to listen to the `$destroy` event?
 
 ## Objectives
 
